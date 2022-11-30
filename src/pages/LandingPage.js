@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 // Components Import
 import Footer from "../components/Footer";
@@ -16,7 +17,8 @@ const LandingPage = () => {
             <h3>buttons start here</h3>
 
             <div className="button-container">
-                <Button name = "findcharities-button" text = "Find Charities" />
+                
+                <Link to={}<Button name = "findcharities-button" text = "Find Charities" />
                 <Button name = "dashboard-button" text = "Personal Dashboard" />
                 <Button name = "registerchar bity-button" text = "Register As A Charity" />
             </div>
