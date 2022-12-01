@@ -8,8 +8,8 @@ import Footer from "../components/Footer";
 
 
 const Dashboard = () => {
-    const bal = 45000
-    const donated = 200
+    let bal = 45000
+    let donated = 200
     return (
         <div className="dashboard-container">
             <Header/>
