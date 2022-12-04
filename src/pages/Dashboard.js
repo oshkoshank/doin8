@@ -1,7 +1,9 @@
 import React from "react";
+//eslint-disable-next-line
+import styles from "../index.css"
 
 // Component Imports
-import Header from "../components/Header";
+import HeadNav from "../components/HeadNav";
 import Footer from "../components/Footer";
 
 // Asset Imports
@@ -12,7 +14,7 @@ const Dashboard = () => {
     let donated = 200
     return (
         <div className="dashboard-container">
-            <Header/>
+            <HeadNav/>
             <div className="personal-container">
 
                 <div className="personal-info-container">

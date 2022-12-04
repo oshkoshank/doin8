@@ -2,3 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+    font-family: "rockford";
+    src: url("../public/fonts/rockford_sans/RockfordSans-Light.otf");
+}
+
+@font-face {
+    font-family: "clemente";
+    src: url("../public/fonts/clemente_pd/ClementePDai-Regular.ttf");
+}

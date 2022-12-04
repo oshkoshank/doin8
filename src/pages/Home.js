@@ -1,17 +1,20 @@
 import React from "react";
 import {Link} from "react-router-dom";
+//eslint-disable-next-line
+import styles from "../index.css"
 
 // Components Import
 import Footer from "../components/Footer";
 import Button from "../components/Button";
-import Header from "../components/Header";
+import HeadNav from "../components/HeadNav";
 
 // Assets Import
 
 const Home = () => {
+    let vrs = "dhanya";
     return (
         <div className="landing-page-container">
-            <Header />
+            <HeadNav />
             <div className="logo-container">
                 <img src={require('../assets/doin8.png')} className="logo-img" alt="doin8"/>
             </div>
@@ -19,9 +22,9 @@ const Home = () => {
             <h3>buttons start here</h3>
 
             <div className="button-container">
-                
-                <Link to="/">
-                    <Button name = "findcharities-button" text = "Find Charities" />
+
+                <Link to="/scratch">
+                    <Button name = "findcharities-button" text = {"find " + vrs} />
                 </Link>
                 <Link to="/dashboard">
                     <Button name = "dashboard-button" text = "Personal Dashboard" />

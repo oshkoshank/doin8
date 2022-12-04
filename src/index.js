@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client'
 import {BrowserRouter, Routes, Route} from "react-router-dom";
+//eslint-disable-next-line
+import styles from "./index.css"
+
 
 // Component Files Import
 import Layout from "./pages/Layout";
@@ -10,6 +13,7 @@ import NoPage from "./pages/NoPage";
 import Explore from "./pages/Explore";
 import Charity from "./pages/Charity";
 import Register from "./pages/Register";
+import Scratch from "./scratches/Scratch1";
 
 export default function App(){
     return (
@@ -22,15 +26,18 @@ export default function App(){
                     <Route path = "explore" element = {<Explore />} />
                     <Route path = "charity" element = {<Charity />} />
                     <Route path = "register" element = {<Register />} />
+                    <Route path = "scratch" element= {<Scratch />} />
                     <Route path = "*" element = {<NoPage />} />
                 </Route>
             </Routes>
         </BrowserRouter>
+
     )
 }
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-    <App/>
+    // <App/>
+    <Scratch/>
 );
