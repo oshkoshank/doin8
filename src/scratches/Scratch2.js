@@ -2,17 +2,57 @@ import React from "react";
 //eslint-disable-next-line
 import styles from "../index.css";
 import {Link} from "react-router-dom";
+import HeadNav from "../components/HeadNav";
+import Footer from "../components/Footer";
 
 const Scratch2 = () => {
     return (
-        <div className={"mb-6 md:mb-0"}>
-            <div className={"md:flex flex-row"}>
-                <Link to={"/charity"}>
-                    <p className={"ButtonLinkUI bg-amber-600 inline-block"}>
-                        Find Charities
-                    </p>
-                </Link>
+        //Main Div Start
+        <div>
+            {/* Header Start */}
+            {/*<HeadNav />*/}
+            {/* Header End */}
+
+            {/* Main Container Start */}
+            <div>
+
+                {/* Heading Container */}
+                <div>
+                    Register As Charity
+                </div>
+                {/* Heading Container End */}
+
+                {/* Forms Container */}
+                <div>
+
+                    {/* Form 1 */}
+                    <form method={"get"}>
+
+                        {/*Charity Name Input*/}
+                        <div>
+                            <input required="required"
+                                   type="text"
+                                   className={"FancyInput"}
+                                   placeholder={"Charity Name"}
+                            />
+                        </div>
+
+                        
+
+
+                    </form>
+                    {/* Form 1 End */}
+
+
+                </div>
+                {/* Forms Container End */}
+
             </div>
+
+            {/* Footer Start */}
+            {/*<Footer />*/}
+            {/* Footer End */}
+
         </div>
     )
 }

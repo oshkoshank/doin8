@@ -37,21 +37,17 @@ const Scratch1 = () => {
                                     {/*Donate to charities text Div end*/}
 
 
-                                    <div className={"mb-6 md:mb-0"}>
-                                        <div className={"md:flex flex-row"}>
+                                    <div className={"mb-6 md:mb-0 space-x-4 "}>
                                             <Link to={"/charity"}>
                                                 <p className={"ButtonLinkUI bg-amber-600 inline-block"}>
                                                     Find Charities
                                                 </p>
                                             </Link>
-                                        </div>
-                                        <div className={"md:flex flex-row"}>
                                         <Link to={"/dashboard"}>
                                             <button className={"ButtonLinkUI inline-block"}>
                                                 dashboard
                                             </button>
                                         </Link>
-                                    </div>
                                     </div>
 
 

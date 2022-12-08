@@ -14,6 +14,7 @@ import Explore from "./pages/Explore";
 import Charity from "./pages/Charity";
 import Register from "./pages/Register";
 import Scratch1 from "./scratches/Scratch1";
+import Scratch2 from "./scratches/Scratch2";
 
 export default function App(){
     return (
@@ -22,7 +23,7 @@ export default function App(){
                 <Route path = "/" element = {<Layout />}>
 
                     {/*Landing Page*/}
-                    <Route index element = {<Scratch1 />} />
+                    <Route index element = {<Scratch2 />} />
                     {/*Landing Page End*/}
                     <Route path = "home" element = {<Home />} />
                     <Route path = "dashboard" element = {<Dashboard />} />
@@ -39,7 +40,9 @@ export default function App(){
 }
 
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(
+    document.getElementById("root")
+);
 root.render(
     <App/>
 

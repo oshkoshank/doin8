@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme : {
     extend : {
+      boxShadow : {
+        'inputbox' : '0 0.4rem #dfd9d9'
+      },
       fontFamily : {
         'sans' : ['rockford']
       }

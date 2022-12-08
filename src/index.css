@@ -1,5 +1,13 @@
 @tailwind base;
 @tailwind components;
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
 @tailwind utilities;
 
 
@@ -40,3 +48,36 @@
 .ButtonLinkUI:active {
     transform: translateY(-1px);
 }
+
+.FancyInput {
+    line-height: 28px;
+    border: 2px solid transparent;
+    border-bottom-color: #777;
+    padding: .2rem 0;
+    outline: none;
+    background-color: transparent;
+    color: #0d0c22;
+    transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.FancyInput:focus, input:hover {
+    outline: none;
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    border-color: #7a9cc6;
+}
+
+.FancyInput::placeholder {
+    color: #777;
+}
+
+.FancyInput:focus::placeholder {
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+
+
+
+
+
