@@ -23,7 +23,7 @@ export default function App(){
                 <Route path = "/" element = {<Layout />}>
 
                     {/*Landing Page*/}
-                    <Route index element = {<Scratch2 />} />
+                    <Route index element = {<Scratch1 />} />
                     {/*Landing Page End*/}
                     <Route path = "home" element = {<Home />} />
                     <Route path = "dashboard" element = {<Dashboard />} />
