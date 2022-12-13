@@ -39,12 +39,12 @@ const Scratch1 = () => {
 
                                     <div className={"mb-6 md:mb-0 space-x-4 "}>
                                             <Link to={"/charity"}>
-                                                <p className={"ButtonLinkUI bg-amber-600 inline-block"}>
+                                                <p className={"FancyButton bg-amber-600 inline-block"}>
                                                     Find Charities
                                                 </p>
                                             </Link>
                                         <Link to={"/dashboard"}>
-                                            <button className={"ButtonLinkUI inline-block"}>
+                                            <button className={"FancyButton inline-block"}>
                                                 dashboard
                                             </button>
                                         </Link>
