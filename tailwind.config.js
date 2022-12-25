@@ -10,7 +10,9 @@ module.exports = {
         'inputbox' : '0 0.4rem #dfd9d9'
       },
       fontFamily : {
-        'sans' : ['rockford']
+          'sans': ['rockford'],
+          'gogh': ['gogh'],
+          'elegance': ['elegance']
       }
     },
   },

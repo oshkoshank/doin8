@@ -21,6 +21,34 @@ button:focus {
     src: url("../public/fonts/clemente_pd/ClementePDai-Regular.ttf");
 }
 
+@font-face {
+    font-family: "gogh";
+    src: url("../public/fonts/Gogh.otf");
+}
+
+@font-face {
+    font-family: "elegance";
+    src: url("../public/fonts/rounded-elegance.ttf");
+}
+
+.FancyTextLink {
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: white;
+    transition: all 0.3s ease 0s;
+
+}
+
+.FancyTextLink:hover {
+    color: #FFD046;
+    transform: translateY(-7px);
+}
+
+.FancyTextLink:active {
+    transform: translateY(-1px);
+}
+
 .FancyButton {
 
     padding: 1.3em 3em;
@@ -32,7 +60,7 @@ button:focus {
     background-color: #fff;
     border: none;
     border-radius: 45px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
@@ -41,7 +69,7 @@ button:focus {
 
 .FancyButton:hover {
     background-color: #23c483;
-    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    box-shadow: 0 15px 20px rgba(46, 229, 157, 0.4);
     color: #fff;
     transform: translateY(-7px);
 }
