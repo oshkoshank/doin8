@@ -24,7 +24,7 @@ export default function App(){
                 <Route path = "/" element = {<Layout />}>
 
                     {/*Landing Page*/}
-                    <Route index element={<Scratch1/>}/>
+                    <Route index element={<Home/>}/>
                     {/*Landing Page End*/}
                     <Route path="home" element={<Home/>}/>
                     <Route path="dashboard" element={<Dashboard/>}/>
