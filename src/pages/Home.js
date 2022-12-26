@@ -3,10 +3,6 @@ import {Link} from "react-router-dom";
 //eslint-disable-next-line
 import styles from "../index.css"
 
-// Components Import
-import Footer from "../components/Footer";
-import Button from "../components/Button";
-import HeadNav from "../components/HeadNav";
 
 // Assets Import
 
@@ -20,11 +16,14 @@ const Home = () => {
             {/* --> Frosted Container Start <-- */}
             <div
                 className={"rounded-3xl bg-none px-8 py-5 w-2/3 h-2/3 backdrop-blur-sm flex flex-col place-content-between" +
-                    "max-sm:px-4 max-sm:w-screen max-sm:h-screen max-sm:backdrop-blur-sm"}
+                    "max-sm:px-4 max-sm:w-screen max-sm:h-screen max-sm:backdrop-blur-sm "}
             >
                 {/* --> Image and Logo Start <-- */}
-                <div className={"flex flex-row items-center justify-center space-x-60 px-8"}>
-                    <h1 className={"mb-8 text-6xl font-gogh text-white"}>
+                <div
+                    className={"flex flex-row items-center justify-center space-x-60 px-8" +
+                        "sm:flex-col sm:w-screen "}
+                >
+                    <h1 className={"mb-8 text-6xl font-gogh text-white sm:mb-2 sm:text-2xl"}>
                         Donate to charities, with
                         <span className={"font-bold text-[#FFD046] "}> doin8
                             </span>
@@ -34,7 +33,7 @@ const Home = () => {
                 {/* --> Image and Logo End <-- */}
 
                 {/* --> Buttons Start <-- */}
-                <div className={"px-8 flex flex-row items-center justify-center space-x-40 py-16"}>
+                <div className={"px-8 flex flex-row items-center justify-center space-x-40 py-16 sm:flex-col"}>
 
                     <Link to={"/charity"}>
                         <p className={"font-elegance FancyTextLink"}>
