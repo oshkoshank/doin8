@@ -15,6 +15,7 @@ import Charity from "./pages/Charity";
 import Register from "./pages/Register";
 import Scratch1 from "./scratches/Scratch1";
 import Scratch2 from "./scratches/Scratch2";
+import Scratch3 from "./scratches/Scratch3";
 
 export default function App(){
     return (
@@ -23,15 +24,17 @@ export default function App(){
                 <Route path = "/" element = {<Layout />}>
 
                     {/*Landing Page*/}
-                    <Route index element = {<Scratch2 />} />
+                    <Route index element={<Scratch1/>}/>
                     {/*Landing Page End*/}
-                    <Route path = "home" element = {<Home />} />
-                    <Route path = "dashboard" element = {<Dashboard />} />
-                    <Route path = "explore" element = {<Explore />} />
-                    <Route path = "charity" element = {<Charity />} />
-                    <Route path = "register" element = {<Register />} />
-                    <Route path = "scratch" element= {<Scratch1 />} />
-                    <Route path = "*" element = {<NoPage />} />
+                    <Route path="home" element={<Home/>}/>
+                    <Route path="dashboard" element={<Dashboard/>}/>
+                    <Route path="explore" element={<Explore/>}/>
+                    <Route path="charity" element={<Charity/>}/>
+                    <Route path="register" element={<Register/>}/>
+                    <Route path="scratch" element={<Scratch1/>}/>
+                    <Route path="scratch2" element={<Scratch2/>}/>
+                    <Route path="scratch3" element={<Scratch3/>}/>
+                    <Route path="*" element={<NoPage/>}/>
                 </Route>
             </Routes>
         </BrowserRouter>

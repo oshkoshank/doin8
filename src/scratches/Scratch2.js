@@ -23,21 +23,27 @@ const Scratch2 = () => {
                 {/* Heading Container End */}
 
                 {/* Forms Container */}
-                <div>
+                <div className={"flex-col gap-10"}>
 
                     {/* Form 1 */}
                     <form method={"get"}>
 
                         {/*Charity Name Input*/}
                         <div>
-                            <input required="required"
-                                   type="text"
-                                   className={"FancyInput"}
+                            <input required={"required"}
+                                   type={"text"}
+                                   className={"FancyInput py-8 flex"}
                                    placeholder={"Charity Name"}
                             />
                         </div>
 
-                        
+                        <div>
+                            <input required={"required"}
+                                   type={"text"}
+                                   className={"FancyInput py-8 flex"}
+                                   placeholder={"Charity Type"}
+                            />
+                        </div>
 
 
                     </form>
